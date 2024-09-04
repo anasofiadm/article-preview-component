@@ -44,7 +44,6 @@ body, html {
 
 .article-info h2 {
     font-size: 1.25rem;
-    margin-bottom: 12px; /* Adjusted margin */
     color: hsl(217, 19%, 35%);
     font-weight: 700;
 }
