@@ -13,7 +13,7 @@ body, html {
   .article-preview {
     display: flex;
     width: 100%;
-    max-width: 800px;
+    max-width: 760px;
     max-height: 300px;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -22,7 +22,7 @@ body, html {
   }
   
   .article-img {
-    flex: 0 0 30%; /* 30% of the container's width */
+    flex: 0 0 40%; /* 30% of the container's width */
     display: flex;
   }
   
@@ -33,7 +33,7 @@ body, html {
   }
   
   .article-info {
-    flex: 0 0 70%; /* 70% of the container's width */
+    flex: 0 0 60%; /* 70% of the container's width */
     padding: 20px;
     display: flex;
     flex-direction: column;
