@@ -34,7 +34,7 @@ body, html {
   
   .article-info {
     flex: 0 0 70%; /* 70% of the container's width */
-    padding: 16px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
