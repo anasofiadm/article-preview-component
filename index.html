@@ -2,35 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Article preview component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article Preview Component</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
-
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
-
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="article-preview">
+    <div class="article-img">
+      <img src="article-preview.jpg" alt="Article Preview">
+    </div>
+    <div class="article-info">
+      <h2>Shift the overall look and feel by<br>adding these wonderful touches<br>to furniture in your home</h2>
+      <p>
+        Ever been in a room and felt like something was missing?<br>
+        Perhaps it felt slightly bare and uninviting. I’ve got some<br>
+        simple tips to help you make any room feel complete.
+      </p>
+      <div class="article-footer">
+        <div class="author-info">
+          <img src="author.jpg" alt="Michelle Appleton">
+          <div class="author-details">
+            <span class="author-name">Michelle Appleton</span>
+            <span class="article-date">28 Jun 2020</span>
+          </div>
+        </div>
+        <button class="share-btn">
+          <img src="share-icon.svg" alt="Share">
+        </button>
+      </div>
+    </div>
   </div>
 </body>
 </html>

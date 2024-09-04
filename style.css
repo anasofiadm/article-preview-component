@@ -1,0 +1,114 @@
+/* General reset for the page */
+body, html {
+    font-family: "Manrope", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: hsl(210, 46%, 95%);
+  }
+  
+  .article-preview {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .article-img {
+    flex: 1;
+    display: flex;
+  }
+  
+  .article-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .article-info {
+    flex: 1;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .article-info h2 {
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+  }
+  
+  .article-info p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+  
+  .article-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .author-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .author-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  
+  .author-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .author-name {
+    font-weight: 700;
+  }
+  
+  .article-date {
+    font-size: 0.875rem;
+    color: #888;
+  }
+  
+  .share-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .share-btn img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  @media (max-width: 600px) {
+    .article-preview {
+      flex-direction: column;
+    }
+  
+    .article-img,
+    .article-info {
+      width: 100%;
+    }
+  
+    .article-info {
+      padding: 12px;
+    }
+  }
+  
