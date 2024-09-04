@@ -89,15 +89,25 @@ body, html {
 }
 
 .share-btn {
-    background: none;
-    border: none;
+    background-color: #f0f0f0; /* Light background color */
+    border-radius: 50%; /* Makes the button circular */
+    padding: 8px; /* Adds some space around the icon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.share-btn:hover {
+    background-color: #e0e0e0; /* Slightly darker background color on hover */
 }
 
 .share-btn img {
-    width: 24px;
-    height: 24px;
+    width: 24px; /* Size of the icon */
+    height: 24px; /* Size of the icon */
 }
+
 
 @media (max-width: 600px) {
     .article-preview {
