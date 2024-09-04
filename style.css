@@ -12,19 +12,19 @@ body, html {
 
 .article-preview {
     display: flex;
-    width: 90%; /* Full width on smaller screens but not the entire page */
+    width: 90%; /* Flexible width, not full-page */
     max-width: 720px; /* Maximum width for larger screens */
-    height: auto; /* Auto height to adjust content */
+    height: auto; /* Auto height for flexibility */
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
     background-color: white;
     box-shadow: 0 5px 8px rgb(0 0 0 / 20%);
-    margin: 20px; /* Add margin to prevent it from sticking to screen edges */
+    margin: 20px; /* Keeps space from screen edges */
 }
 
 .article-img {
-    flex: 0 0 40%; /* 40% of the container's width on larger screens */
+    flex: 0 0 40%; /* Keeps 40% width for the image */
     display: flex;
 }
 
@@ -35,14 +35,14 @@ body, html {
 }
 
 .article-info {
-    flex: 0 0 60%; 
-    padding: 30px; 
+    flex: 0 0 60%; /* Keeps 60% width for the info section */
+    padding: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: flex-start; 
+    justify-content: center;
+    align-items: flex-start;
     text-align: left;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .article-info h2 {
@@ -64,7 +64,7 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%; /* Ensures footer aligns with the rest of the content */
+    width: 100%;
 }
 
 .author-info {
@@ -95,50 +95,57 @@ body, html {
 }
 
 .share-btn {
-    background-color: #f0f0f0; /* Light background color */
-    border-radius: 50%; /* Makes the button circular */
-    padding: 8px; /* Adds some space around the icon */
+    background-color: #f0f0f0; 
+    border-radius: 50%;
+    padding: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth background color transition */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow with bottom offset */
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow */
 }
 
 .share-btn:hover {
-    background-color: #e0e0e0; /* Slightly darker background color on hover */
+    background-color: #e0e0e0;
 }
 
 .share-btn img {
-    width: 24px; /* Size of the icon */
-    height: 24px; /* Size of the icon */
+    width: 24px;
+    height: 24px;
 }
 
 @media (max-width: 600px) {
     .article-preview {
-        flex-direction: column;
-        width: 90%; /* Adjust the width to 90% on mobile screens */
-        height: auto; /* Allow the height to adjust based on content */
+        flex-direction: row; /* Keep the image and info side by side */
+        width: 90%; /* Adjust width on mobile */
+        max-height: 320px; /* Set a maximum height to avoid it getting too tall */
+        height: auto; /* Adjusts based on content */
     }
 
-    .article-img,
+    .article-img {
+        flex: 0 0 40%; /* Image part still takes 40% of the width */
+        height: auto; /* Ensure the height adjusts based on content */
+    }
+
     .article-info {
-        width: 100%; /* Full width for mobile */
+        flex: 0 0 60%; /* Info part still takes 60% */
+        padding: 16px; /* Smaller padding for mobile */
     }
 
-    .article-info {
-        padding: 16px; /* Smaller padding on mobile */
+    .article-footer {
+        flex-direction: row;
+        justify-content: space-between;
     }
-
+    
     .share-btn {
         width: 32px;
-        height: 32px; /* Smaller share button for mobile */
+        height: 32px;
         padding: 6px;
     }
 
     .share-btn img {
         width: 20px;
-        height: 20px; /* Adjust icon size */
+        height: 20px;
     }
 }
