@@ -12,17 +12,19 @@ body, html {
 
 .article-preview {
     display: flex;
-    width: 720px; /* Fixed width */
-    height: 270px; /* Fixed height */
+    width: 90%; /* Full width on smaller screens but not the entire page */
+    max-width: 720px; /* Maximum width for larger screens */
+    height: auto; /* Auto height to adjust content */
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
     background-color: white;
-    box-shadow: 0 5px 8px rgb(0 0 0 / 20%)
+    box-shadow: 0 5px 8px rgb(0 0 0 / 20%);
+    margin: 20px; /* Add margin to prevent it from sticking to screen edges */
 }
 
 .article-img {
-    flex: 0 0 40%; /* 40% of the container's width */
+    flex: 0 0 40%; /* 40% of the container's width on larger screens */
     display: flex;
 }
 
@@ -101,6 +103,7 @@ body, html {
     justify-content: center;
     cursor: pointer;
     transition: background-color 0.3s ease; /* Smooth background color transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow with bottom offset */
 }
 
 .share-btn:hover {
@@ -112,19 +115,30 @@ body, html {
     height: 24px; /* Size of the icon */
 }
 
-
 @media (max-width: 600px) {
     .article-preview {
         flex-direction: column;
-        height: auto; /* Adjust height for mobile */
+        width: 90%; /* Adjust the width to 90% on mobile screens */
+        height: auto; /* Allow the height to adjust based on content */
     }
 
     .article-img,
     .article-info {
-        width: 100%;
+        width: 100%; /* Full width for mobile */
     }
 
     .article-info {
-        padding: 12px;
+        padding: 16px; /* Smaller padding on mobile */
+    }
+
+    .share-btn {
+        width: 32px;
+        height: 32px; /* Smaller share button for mobile */
+        padding: 6px;
+    }
+
+    .share-btn img {
+        width: 20px;
+        height: 20px; /* Adjust icon size */
     }
 }
